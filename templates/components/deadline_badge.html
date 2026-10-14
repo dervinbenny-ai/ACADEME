@@ -1,0 +1,1 @@
+{% macro deadline_badge(deadline, late=false) %}<span class="deadline-countdown" data-deadline="{{ deadline.isoformat() }}Z" data-allow-late="{{ 'true' if late else 'false' }}">{{ deadline.strftime('%d %b, %H:%M') }} UTC</span>{% endmacro %}

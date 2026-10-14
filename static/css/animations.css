@@ -1,0 +1,10 @@
+@keyframes page-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes toast-in{from{opacity:0;transform:translateX(15px)}to{opacity:1;transform:translateX(0)}}
+@keyframes dialog-in{from{opacity:0;transform:scale(.98) translateY(6px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes float-soft{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes ripple{to{transform:scale(3);opacity:0}}
+@keyframes shimmer{to{background-position:-200% 0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.main-content{animation:page-in .28s ease both}.login-card{animation:page-in .35s ease both}.reveal-ready{opacity:0;transform:translateY(14px);transition:opacity .4s,transform .4s}.reveal-ready.in-view{opacity:1;transform:none}.field-enter{animation:page-in .25s ease}.ripple-dot{position:absolute;pointer-events:none;background:rgb(255 255 255 / 24%);border-radius:50%;transform:scale(0);animation:ripple .5s ease-out;z-index:3}.button.secondary .ripple-dot{background:rgba(var(--accent-rgb),.12)}.loading-spinner{display:inline-block;width:13px;height:13px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .7s linear infinite}.login-illustration .floating-layer{animation:float-soft 7s ease-in-out infinite}.progress-track>span{transition:width .7s ease}.completion-ring circle.progress{transition:stroke-dashoffset .8s ease}button[data-magnetic]{will-change:transform}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.cursor-glow{display:none!important}.reveal-ready{opacity:1;transform:none}[data-tilt]{transform:none!important}}
+@media(hover:none),(pointer:coarse){.cursor-glow{display:none!important}[data-tilt]{transform:none!important}[data-spotlight]:before{display:none}}

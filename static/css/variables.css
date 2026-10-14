@@ -1,0 +1,23 @@
+:root {
+ --bg-main:#f5f6fa; --bg-soft:#eef0fc; --surface:#fff; --surface-raised:#fafbfe;
+ --navy-950:#0d1528; --navy-900:#15213b; --blue-600:#2563eb; --blue-500:#3b82f6;
+ --indigo-600:#5145cd; --indigo-500:#6366f1; --purple-600:#7c3aed; --purple-500:#8b5cf6;
+ --cyan-500:#0891b2; --emerald-500:#168568; --amber-500:#b77918; --red-500:#c54659;
+ --text-primary:#202b43; --text-secondary:#58647b; --text-muted:#717d92;
+ --border-light:#e4e7ef; --radius-sm:10px; --radius-md:16px; --radius-lg:22px; --radius-xl:28px;
+ --shadow-sm:0 3px 12px rgb(15 23 42 / 3%); --shadow-md:0 10px 32px rgb(15 23 42 / 8%);
+ --shadow-lg:0 24px 65px rgb(15 23 42 / 15%);
+ --accent:#6554d8; --accent-soft:#eeebfc; --accent-rgb:101,84,216;
+ --gradient:linear-gradient(125deg,#4362d6 0%,#6250cc 55%,#8b64d3 100%);
+ --navy:var(--text-primary); --blue:var(--accent); --indigo:var(--indigo-600); --purple:var(--purple-600);
+ --cyan:var(--cyan-500); --green:var(--emerald-500); --bg:var(--bg-main); --card:var(--surface);
+ --text:var(--text-primary); --muted:var(--text-muted); --border:var(--border-light);
+ --radius:var(--radius-md); --shadow:var(--shadow-md); --transition:180ms ease;
+ --sidebar-width:260px; --sidebar-ink:#a9b4cf; --sidebar-surface:#111b31;
+ --success-soft:#e7f5ee; --warning-soft:#fff3df; --danger-soft:#fcecef;
+ --info-soft:#eaf0ff; --white:#fff; --focus:#9687eb;
+ color-scheme:light;
+}
+body[data-role="TEACHER"]{--accent:#327cc1;--accent-soft:#e9f2fc;--accent-rgb:50,124,193;--gradient:linear-gradient(125deg,#1b8aaa,#3c69c7 50%,#6952cb)}
+body[data-role="STUDENT"]{--accent:#7855cc;--accent-soft:#f0eafa;--accent-rgb:120,85,204;--gradient:linear-gradient(125deg,#5d55cc,#8050c6 60%,#a26bcf)}
+body[data-role="SUPER_ADMIN"]{--accent:#5d65c9;--accent-soft:#edf0fc;--accent-rgb:93,101,201;--gradient:linear-gradient(125deg,#26385c,#494aa8 60%,#6c5bbd)}

@@ -1,0 +1,7 @@
+{% macro stat_card(label, count, path, icon) %}
+<a class="stat-card" href="{{ path }}" data-spotlight>
+ <div class="stat-top"><span class="stat-icon"><i class="bi bi-{{ icon }}"></i></span><i class="bi bi-arrow-up-right"></i></div>
+ <strong data-count="{{ count }}">{{ count }}</strong><span>{{ label }}</span>
+ <div class="stat-foot"><i class="bi bi-arrow-right-short"></i> {{ 'View your profile' if 'completion' in label else 'Explore records' }}</div>
+</a>
+{% endmacro %}
